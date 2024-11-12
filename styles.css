@@ -1,0 +1,172 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    max-height: 50px; /* Ajuste de tamaño del logo */
+    margin-right: 10px;
+}
+
+h2, h3 {
+    margin-top: 20px;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+/* Efecto de escala al pasar el ratón */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo del menú */
+header.navbar {
+    background-color: #000 /* Cambia este color al que prefieras */
+    padding: 10px 20px;
+}
+
+.nav-item {
+    margin: 0; /* Ajuste del margen entre los elementos del menú */
+}
+
+.navbar-nav .nav-item a {
+    color: #ffffff; /* Color del texto de los enlaces */
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Hover en los enlaces */
+.navbar-nav .nav-item a:hover {
+    color: #333; /* Cambia el color del texto al pasar el cursor */
+    background-color: #af920d; /* Fondo blanco en hover */
+    border-radius: 5px;
+}
+
+/* Botón de hamburguesa en pantallas pequeñas */
+header .navbar-toggler {
+    border: none; /* Sin borde en el botón */
+    outline: none;
+}
+
+/* Icono del botón de hamburguesa */
+header .navbar-toggler-icon {
+    background-color: transparent;
+}
+
+/* Fondo del menú desplegable en móviles */
+header .navbar-collapse {
+    background-color: #55555; /* Mismo color de fondo que el menú */
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 992px) {
+    header .navbar-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header .navbar-nav .nav-link {
+        font-size: 18px;
+        margin-right: 0;
+        padding: 12px 0;
+        display: block;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #333;
+}
+
+footer h5 {
+    font-size: 18px;
+    color: #333;
+}
+
+footer .social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+    transform: scale(1.1);
+}
+
+footer .rating {
+    font-size: 2rem;
+    color: #E5A65E;
+    cursor: pointer;
+}
+
+footer .rating span:hover,
+footer .rating span:hover ~ span {
+    color: rgb(14, 13, 12);
+}
+
+footer .rating span {
+    transition: color 0.3s ease;
+}
+
+/* Derechos reservados */
+.derechos {
+    background-color: #f0f0f000;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    font-size: 14px;
+}
+
+/* Estilo para el mapa */
+#mapa {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+/* Servicios */
+.referencia1, .referencia2 {
+    color: black;
+}
+
+.carousel-item {
+    margin-top: 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+}
+
+/*carrusel  */
+.carousel-inner img {
+    max-height: 500px; /* Ajusta la altura máxima según tus necesidades */
+    object-fit: cover;
+}
+
+/*texto*/
+.carousel-caption {
+    background-color:transparent; /*rgba(0, 0, 0, 0.5);  Fondo semitransparente */
+    padding: 10px;
+}
+
+/* Aumenta el margen superior e inferior del contenedor del carrusel */
+#carouselExampleCaptions {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+}
